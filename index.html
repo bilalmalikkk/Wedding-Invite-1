@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101614">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Wedding invitation for Engr. Yousaf Malik, son of Professor Malik Iqbal, and Arooj Ramzan, daughter of Dr. Ramzan. Barat on Sunday 17 January 2027 at 1:00 in Shujabad. Walima on Thursday 21 January 2027 at 1:00 at Shan-e-Multan Event Complex, Multan.">
+  <title>Yousaf &amp; Arooj — Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Nastaliq+Urdu:wght@500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23101614'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-family='Georgia' font-size='18' fill='%23d4bc94'%3EY%26A%3C/text%3E%3C/svg%3E">
+  <style>
+    :root {
+      --bg: #101614;
+      --ivory: #f6f1e8;
+      --ivory-deep: #efe4d2;
+      --ink: #1c1915;
+      --muted: #5e584e;
+      --gold: #a68558;
+      --gold-soft: #d7c09a;
+      --wax: #6e2432;
+      --liner: #14352c;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html { background: var(--bg); color-scheme: dark; }
+
+    body {
+      margin: 0;
+      min-height: 100dvh;
+      color: #f4efe6;
+      font-family: Outfit, "Avenir Next", "Segoe UI", sans-serif;
+      font-weight: 300;
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.28;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cg fill='none' stroke='%23c6a56e' stroke-width='0.7'%3E%3Cpath d='M90 62 L116 90 L90 118 L64 90 Z'/%3E%3Cpath d='M90 74 L106 90 L90 106 L74 90 Z'/%3E%3C/g%3E%3C/svg%3E");
+      z-index: 0;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(ellipse 72% 48% at 50% 36%, rgba(176, 138, 78, 0.16), transparent 64%),
+        radial-gradient(ellipse 55% 32% at 50% 100%, rgba(16, 52, 42, 0.55), transparent 72%);
+      z-index: 0;
+    }
+
+    .frame {
+      position: fixed;
+      inset: 14px;
+      border: 1px solid rgba(198, 164, 110, 0.32);
+      pointer-events: none;
+      z-index: 5;
+    }
+
+    .frame::after {
+      content: "";
+      position: absolute;
+      inset: 5px;
+      border: 1px solid rgba(198, 164, 110, 0.12);
+    }
+
+    .sr {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    ::selection { background: #e7d3a4; color: var(--ink); }
+
+    button { font: inherit; color: inherit; }
+
+    .lobby[hidden],
+    .reading[hidden],
+    .card[hidden] { display: none; }
+
+    .lobby, .reading { position: relative; z-index: 1; }
+
+    .lobby {
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: safe center;
+      gap: 26px;
+      padding: 56px 18px 32px;
+      transition: opacity 0.45s ease;
+    }
+
+    .lobby.is-leaving { opacity: 0; }
+
+    .intro { text-align: center; transition: opacity 0.45s ease, transform 0.6s ease; }
+    .lobby.is-opening .intro { opacity: 0; transform: translateY(-12px); }
+
+    .eyebrow, .hint {
+      margin: 0;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.42em;
+      text-transform: uppercase;
+      color: var(--gold-soft);
+    }
+
+    .hint { margin-top: 16px; letter-spacing: 0.32em; color: rgba(215, 192, 154, 0.78); }
+
+    h1 {
+      margin: 10px 0 0;
+      font-family: "Cormorant Garamond", Palatino, Georgia, serif;
+      font-weight: 500;
+      font-size: clamp(58px, 10vw, 92px);
+      line-height: 0.9;
+      letter-spacing: -0.03em;
+      color: #f4efe6;
+    }
+
+    h1 em {
+      font-style: italic;
+      font-weight: 400;
+      color: var(--gold-soft);
+      padding: 0 0.08em;
+      letter-spacing: 0;
+    }
+
+    .cover-ur {
+      margin: 10px 0 0;
+      font-family: "Noto Nastaliq Urdu", "Noto Nastaliq Urdu", serif;
+      font-size: 24px;
+      line-height: 1.85;
+      color: rgba(244, 239, 230, 0.9);
+    }
+
+    .cover-when {
+      margin: 4px 0 0;
+      font-family: "Cormorant Garamond", Palatino, Georgia, serif;
+      font-size: 20px;
+      font-style: italic;
+      color: rgba(244, 239, 230, 0.72);
+    }
+
+    .intro > * { animation: rise 0.8s both; }
+    .intro > *:nth-child(2) { animation-delay: 0.08s; }
+    .intro > *:nth-child(3) { animation-delay: 0.16s; }
+    .intro > *:nth-child(4) { animation-delay: 0.24s; }
+    .intro > *:nth-child(5) { animation-delay: 0.32s; }
+    .pair { animation: rise 0.9s 0.28s both; }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(14px); }
+      to { opacity: 1; transform: none; }
+    }
+
+    .pair {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 22px;
+      width: min(680px, 100%);
+      transition: gap 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .envelope {
+      width: calc(50% - 11px);
+      max-width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+      padding: 8px 0 0;
+      background: none;
+      border: 0;
+      cursor: pointer;
+      color: inherit;
+      transition: opacity 0.45s ease, width 0.6s cubic-bezier(0.16, 1, 0.3, 1), max-width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .lobby.is-opening .pair { gap: 0; }
+    .lobby.is-opening .envelope { pointer-events: none; }
+    .lobby.is-opening .envelope:not(.is-open) {
+      width: 0;
+      max-width: 0;
+      opacity: 0;
+      overflow: hidden;
+      padding: 0;
+      gap: 0;
+    }
+    .lobby.is-opening .envelope.is-open {
+      width: min(300px, 78%);
+      max-width: 300px;
+    }
+
+    .envelope:focus-visible {
+      outline: 1px solid rgba(217, 196, 154, 0.95);
+      outline-offset: 8px;
+    }
+
+    .env {
+      width: 100%;
+      aspect-ratio: 1.62 / 1;
+      position: relative;
+      transform-style: preserve-3d;
+    }
+
+    .env-back,
+    .env-letter,
+    .fold,
+    .env-flap,
+    .flap-inner,
+    .flap-front,
+    .flap-back {
+      position: absolute;
+    }
+
+    .env-back {
+      inset: 0;
+      background: linear-gradient(180deg, #fbf7f0, #f1e6d6);
+      box-shadow:
+        0 22px 44px rgba(0, 0, 0, 0.38),
+        inset 0 0 0 1px rgba(120, 90, 50, 0.16);
+      transition: box-shadow 0.35s ease;
+    }
+
+    .envelope:hover .env-back { box-shadow: 0 28px 50px rgba(0, 0, 0, 0.48), inset 0 0 0 1px rgba(120, 90, 50, 0.2); }
+
+    .env-letter {
+      z-index: 1;
+      top: 12%;
+      left: 11%;
+      right: 11%;
+      height: 72%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 7%;
+      background: #fffdf8;
+      color: var(--ink);
+      box-shadow: 0 8px 18px rgba(60, 40, 10, 0.08);
+      transform: translateY(10%);
+      transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.22s;
+    }
+
+    .envelope.is-open .env-letter { transform: translateY(-54%); }
+
+    .env-letter-kicker {
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: #7a6140;
+    }
+
+    .env-letter-names {
+      margin-top: 6px;
+      font-family: "Cormorant Garamond", Palatino, Georgia, serif;
+      font-size: clamp(20px, 3vw, 26px);
+      line-height: 1;
+      text-align: center;
+    }
+
+    .env-letter-names i { font-style: italic; color: var(--gold); }
+
+    .fold { inset: 0; z-index: 2; }
+    .fold-left { background: #eadfcb; clip-path: polygon(0 0, 50% 58%, 0 100%); }
+    .fold-right { background: #e0d0b8; clip-path: polygon(100% 0, 50% 58%, 100% 100%); }
+    .fold-bottom { background: #f3e9d8; clip-path: polygon(0 100%, 50% 58%, 100% 100%); }
+
+    .env-flap {
+      inset: 0;
+      z-index: 4;
+      perspective: 900px;
+      transform-style: preserve-3d;
+      transition: z-index 0s linear;
+    }
+
+    .envelope.is-open .env-flap {
+      z-index: 0;
+      transition: z-index 0s linear 0.42s;
+    }
+
+    .flap-inner {
+      inset: 0;
+      transform-style: preserve-3d;
+      transform-origin: top center;
+      transition: transform 0.95s cubic-bezier(0.5, 0.02, 0.2, 1);
+    }
+
+    .envelope.is-open .flap-inner { transform: rotateX(180deg); }
+
+    .flap-front,
+    .flap-back {
+      inset: 0;
+      clip-path: polygon(0 0, 100% 0, 50% 58%);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+
+    .flap-front { background: linear-gradient(165deg, #fbf6ee 0%, #f3e7d4 52%, #e7d7c0 100%); }
+    .flap-back {
+      transform: rotateX(180deg);
+      background-color: var(--liner);
+      background-image:
+        radial-gradient(circle at 50% 72%, rgba(215, 192, 154, 0.22), transparent 46%),
+        repeating-linear-gradient(60deg, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px 11px),
+        repeating-linear-gradient(-60deg, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px 11px);
+    }
+
+    .seal {
+      position: absolute;
+      left: 50%;
+      top: 58%;
+      z-index: 2;
+      width: clamp(40px, 20%, 58px);
+      aspect-ratio: 1;
+      height: auto;
+      transform: translate(-50%, -50%);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+
+    .seal-disc {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: #f3e6c8;
+      font-family: "Cormorant Garamond", Palatino, Georgia, serif;
+      font-style: italic;
+      font-size: 16px;
+      letter-spacing: 0.02em;
+      background: radial-gradient(circle at 34% 30%, #9a4450, #6e2432 48%, #541c26);
+      box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, 0.28),
+        inset 0 -8px 12px rgba(0, 0, 0, 0.2),
+        0 0 0 1px rgba(232, 206, 160, 0.45),
+        0 10px 16px rgba(0, 0, 0, 0.32);
+      animation: seal-pulse 2.6s ease-in-out 2;
+    }
+
+    .envelope:hover .seal-disc { transform: scale(1.05); }
+    .envelope:active .seal-disc { transform: scale(0.96); }
+    .seal-disc { transition: transform 0.3s ease; }
+
+    @keyframes seal-pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.045); }
+    }
+
+    .env-caption { display: flex; flex-direction: column; align-items: center; text-align: center; }
+    .cap-ur {
+      font-family: "Noto Nastaliq Urdu", serif;
+      font-size: clamp(16px, 2.4vw, 22px);
+      line-height: 1.8;
+      color: #f6f1e7;
+    }
+    .cap-en {
+      font-size: clamp(10px, 1.5vw, 12px);
+      font-weight: 500;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+    }
+    .cap-meta {
+      margin-top: 4px;
+      font-size: clamp(11px, 1.6vw, 13px);
+      letter-spacing: 0.01em;
+      line-height: 1.35;
+      color: rgba(243, 236, 223, 0.66);
+    }
+
+    .reading {
+      min-height: 100dvh;
+      display: grid;
+      align-content: safe center;
+      justify-items: center;
+      padding: 32px 20px 40px;
+      animation: fade 0.45s ease both;
+    }
+
+    @keyframes fade {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .reading-layout {
+      width: min(920px, 100%);
+      display: grid;
+      grid-template-columns: 190px minmax(0, 430px);
+      gap: 42px;
+      align-items: start;
+      justify-content: center;
+      justify-items: center;
+    }
+
+    .rail {
+      position: sticky;
+      top: 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4px;
+      padding-top: 18px;
+    }
+
+    .rail-close, .rail-print {
+      background: none;
+      border: 0;
+      padding: 8px 0;
+      cursor: pointer;
+      color: rgba(215, 192, 154, 0.82);
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .rail-close:hover, .rail-print:hover { color: #f6f1e7; }
+
+    .rail-item {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2px;
+      padding: 12px 0 12px 14px;
+      background: none;
+      border: 0;
+      border-left: 1px solid transparent;
+      color: rgba(244, 239, 230, 0.5);
+      text-align: left;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .rail-item[aria-selected="true"] {
+      border-left-color: var(--gold-soft);
+      color: #f6f1e7;
+    }
+
+    .rail-kicker {
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+    }
+
+    .rail-title {
+      font-family: "Cormorant Garamond", Palatino, Georgia, serif;
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 1;
+    }
+
+    .rail-meta { font-size: 12px; font-weight: 300; color: rgba(244, 239, 230, 0.62); }
+
+    .rail-item:focus-visible,
+    .rail-close:focus-visible,
+    .rail-print:focus-visible,
+    .card-links a:focus-visible {
+      outline: 1px solid rgba(217, 196, 154, 0.95);
+      outline-offset: 4px;
+    }
+
+    .card {
+      width: min(430px, 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .paper-wrap { position: relative; width: 100%; }
+
+    .paper-back {
+      position: absolute;
+      inset: 12px -6px -8px 10px;
+      background: #e5d8c4;
+      transform: rotate(1.6deg);
+    }
+
+    .paper {
+      position: relative;
+      background-color: var(--ivory);
+      background-image:
+        repeating-linear-gradient(0deg, rgba(90, 60, 20, 0.015) 0 1px, transparent 1px 3px);
+      color: var(--ink);
+      padding: 30px 28px 26px;
+      box-shadow: 0 26px 54px rgba(0, 0, 0, 0.34);
+    }
+
+    .paper::before {
+      content: "";
+      position: absolute;
+      inset: 11px;
+      border: 1px solid rgba(166, 128, 74, 0.42);
+      pointer-events: none;
+    }
+
+    .paper-wrap.is-in { animation: card-in 0.75s cubic-bezier(0.16, 1, 0.3, 1) both; }
+
+    @keyframes card-in {
+      from { opacity: 0; transform: translateY(18px); }
+      to { opacity: 1; transform: none; }
+    }
+
+    .crest {
+      width: 46px;
+      height: 46px;
+      margin: 0 auto;
+      border: 1px solid rgba(166, 128, 74, 0.75);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1px;
+      font-family: "Cormorant Garamond", Palatino, Georgia, serif;
+      font-size: 15px;
+      color: #6f5432;
+    }
+
+    .crest i { font-style: italic; font-size: 12px; }
+
+    .bism {
+      margin: 4px 0 0;
+      text-align: center;
+      font-family: "Noto Nastaliq Urdu", serif;
+      font-size: 20px;
+      line-height: 1.8;
+      color: var(--ink);
+    }
+
+    .kicker {
+      margin: 2px 0 0;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.38em;
+      text-transform: uppercase;
+      color: #7a6140;
+    }
+
+    .kicker-ur {
+      display: block;
+      margin-bottom: 0;
+      font-family: "Noto Nastaliq Urdu", serif;
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 0;
+      text-transform: none;
+      line-height: 1.7;
+      color: var(--ink);
+    }
+
+    .kicker-sub {
+      margin: 2px 0 0;
+      text-align: center;
+      font-family: "Cormorant Garamond", Palatino, Georgia, serif;
+      font-style: italic;
+      font-size: 17px;
+      color: #6f675e;
+    }
+
+    .ornament {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 132px;
+      margin: 10px auto;
+    }
+
+    .ornament span { flex: 1; height: 1px; background: rgba(166, 128, 74, 0.75); }
+    .ornament i {
+      width: 5px;
+      height: 5px;
+      border: 1px solid var(--gold);
+      transform: rotate(45deg);
+    }
+
+    .hosts {
+      margin: 0;
+      text-align: center;
+      font-family: "Cormorant Garamond", Palatino, Georgia, serif;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.32;
+      color: #241f1a;
+    }
+
+    .hosts em {
+      font-weight: 400;
+      font-size: 16px;
+      color: #6f675e;
+    }
+
+    .request {
+      max-width: 28ch;
+      margin: 8px auto 0;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 1.6;
+      letter-spacing: 0.02em;
+      color: var(--muted);
+    }
+
+    .couple { margin-top: 10px; text-align: center; }
+
+    .who { margin: 0; }
+    .rank {
+      display: block;
+      margin-bottom: 3px;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.34em;
+      text-transform: uppercase;
+      color: #7a6140;
+    }
+
+    .who-name {
+      font-family: "Cormorant Garamond", Palatino, Georgia, serif;
+      font-weight: 500;
+      font-size: clamp(34px, 5vw, 44px);
+      line-height: 0.98;
+      color: var(--ink);
+    }
+
+    .amp {
+      position: relative;
+      margin: 4px 0;
+      font-family: "Cormorant Garamond", Palatino, Georgia, serif;
+      font-style: italic;
+      font-size: 28px;
+      line-height: 1;
+      color: var(--gold);
+    }
+
+    .kin {
+      display: block;
+      margin-top: 5px;
+      font-family: "Cormorant Garamond", Palatino, Georgia, serif;
+      font-style: italic;
+      font-size: 15px;
+      color: #6f675e;
+    }
+
+    .who-ur {
+      margin: 6px 0 0;
+      font-family: "Noto Nastaliq Urdu", serif;
+      font-size: 18px;
+      line-height: 1.8;
+      color: #4a433b;
+    }
+
+    .verse {
+      max-width: 22ch;
+      margin: 14px auto 0;
+      text-align: center;
+      font-family: "Cormorant Garamond", Palatino, Georgia, serif;
+      font-style: italic;
+      font-size: 17px;
+      line-height: 1.35;
+      color: #3f382f;
+    }
+
+    .rsvp {
+      margin: 12px 0 0;
+      text-align: center;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #7a6140;
+    }
+
+    .rsvp a {
+      color: var(--ink);
+      letter-spacing: 0.06em;
+      text-decoration: none;
+    }
+
+    .when { margin-top: 4px; text-align: center; }
+    .dow {
+      margin: 0;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: #7a6140;
+    }
+    .num {
+      margin: 2px 0 0;
+      font-family: "Cormorant Garamond", Palatino, Georgia, serif;
+      font-style: italic;
+      font-weight: 500;
+      font-size: 54px;
+      line-height: 0.8;
+      color: var(--ink);
+    }
+    .month {
+      margin: 8px 0 0;
+      font-family: "Cormorant Garamond", Palatino, Georgia, serif;
+      font-size: 18px;
+      color: #2a251f;
+    }
+    .time {
+      margin: 8px 0 0;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #6f675e;
+    }
+
+    .place { margin-top: 12px; text-align: center; }
+    .venue-name {
+      margin: 0;
+      font-family: "Cormorant Garamond", Palatino, Georgia, serif;
+      font-size: 26px;
+      font-weight: 500;
+      line-height: 1.12;
+      color: var(--ink);
+      text-wrap: balance;
+    }
+    .venue-address {
+      margin: 8px 0 0;
+      font-size: 13.5px;
+      font-weight: 300;
+      line-height: 1.55;
+      color: var(--muted);
+    }
+
+    .closing {
+      margin: 12px 0 0;
+      text-align: center;
+      font-family: "Cormorant Garamond", Palatino, Georgia, serif;
+      font-style: italic;
+      font-size: 16px;
+      color: #5c5348;
+    }
+
+    .card-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px 16px;
+      margin: 0;
+    }
+
+    .card-links a {
+      color: rgba(215, 192, 154, 0.84);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    .card-links a:hover { color: #f6f1e7; }
+
+    @media (max-width: 800px) {
+      .frame { inset: 8px; }
+      .reading-layout { grid-template-columns: 1fr; gap: 12px; }
+      .rail {
+        position: static;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 4px 8px;
+        padding-top: 0;
+      }
+      .rail-item {
+        width: auto;
+        align-items: center;
+        border-left: 0;
+        border-bottom: 1px solid transparent;
+        padding: 8px 10px;
+        text-align: center;
+      }
+      .rail-item[aria-selected="true"] { border-bottom-color: var(--gold-soft); }
+      .rail-meta { display: none; }
+      .rail-title { font-size: 22px; }
+      .paper { padding: 26px 18px 22px; }
+      h1 { letter-spacing: -0.02em; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+
+    @media print {
+      @page { margin: 14mm; }
+      html, body { background: #fff !important; }
+      body::before, body::after, .frame, .lobby, .rail, .card-links, .paper-back { display: none !important; }
+      .reading {
+        display: block !important;
+        min-height: 0 !important;
+        padding: 0 !important;
+        animation: none !important;
+      }
+      .reading-layout { display: block !important; }
+      .card {
+        display: flex !important;
+        break-after: page;
+        margin: 0 auto 12mm;
+        width: 148mm;
+      }
+      .card:last-of-type { break-after: auto; }
+      .paper { box-shadow: none; }
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
+  </style>
+  <noscript>
+    <style>
+      .lobby { display: none !important; }
+      .reading { display: grid !important; }
+      .card { display: flex !important; }
+      .reading-layout { display: block !important; }
+      .rail { display: none !important; }
+      .card + .card { margin-top: 28px; }
+    </style>
+  </noscript>
+</head>
+<body>
+  <div class="frame" aria-hidden="true"></div>
+  <p class="sr" id="status" aria-live="polite"></p>
+  <main>
+    <section class="lobby" id="lobby">
+      <header class="intro">
+        <p class="eyebrow">You are invited</p>
+        <h1>Yousaf <em>&amp;</em> Arooj</h1>
+        <p class="cover-ur" lang="ur" dir="rtl">یوسف ملک اور عروج رمضان</p>
+        <p class="cover-when">January 2027</p>
+        <p class="hint">Open a seal</p>
+      </header>
+      <div class="pair">
+        <button class="envelope" type="button" data-event="barat" aria-expanded="false" aria-label="Open the Barat invitation, Sunday 17 January, Shujabad">
+          <span class="env" aria-hidden="true">
+            <span class="env-back"></span>
+            <span class="env-letter">
+              <span class="env-letter-kicker">The Barat</span>
+              <span class="env-letter-names">Yousaf <i>&amp;</i> Arooj</span>
+            </span>
+            <span class="fold fold-left"></span>
+            <span class="fold fold-right"></span>
+            <span class="fold fold-bottom"></span>
+            <span class="env-flap">
+              <span class="flap-inner">
+                <span class="flap-front"></span>
+                <span class="flap-back"></span>
+                <span class="seal"><span class="seal-disc">Y &amp; A</span></span>
+              </span>
+            </span>
+          </span>
+          <span class="env-caption">
+            <span class="cap-ur" lang="ur" dir="rtl">بارات</span>
+            <span class="cap-en">The Barat</span>
+            <span class="cap-meta">Sunday · 17 January · Shujabad</span>
+          </span>
+        </button>
+        <button class="envelope" type="button" data-event="walima" aria-expanded="false" aria-label="Open the Walima invitation, Thursday 21 January, Shan-e-Multan Event Complex">
+          <span class="env" aria-hidden="true">
+            <span class="env-back"></span>
+            <span class="env-letter">
+              <span class="env-letter-kicker">The Walima</span>
+              <span class="env-letter-names">Yousaf <i>&amp;</i> Arooj</span>
+            </span>
+            <span class="fold fold-left"></span>
+            <span class="fold fold-right"></span>
+            <span class="fold fold-bottom"></span>
+            <span class="env-flap">
+              <span class="flap-inner">
+                <span class="flap-front"></span>
+                <span class="flap-back"></span>
+                <span class="seal"><span class="seal-disc">Y &amp; A</span></span>
+              </span>
+            </span>
+          </span>
+          <span class="env-caption">
+            <span class="cap-ur" lang="ur" dir="rtl">ولیمہ</span>
+            <span class="cap-en">The Walima</span>
+            <span class="cap-meta">Thursday · 21 January · Multan</span>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <section class="reading" id="reading" hidden>
+      <div class="reading-layout">
+        <nav class="rail" aria-label="Celebrations">
+          <button class="rail-close" type="button" id="backBtn">Close</button>
+          <button class="rail-item" type="button" data-event="barat" aria-selected="false">
+            <span class="rail-kicker">01</span>
+            <span class="rail-title">Barat</span>
+            <span class="rail-meta">17 January · Shujabad</span>
+          </button>
+          <button class="rail-item" type="button" data-event="walima" aria-selected="false">
+            <span class="rail-kicker">02</span>
+            <span class="rail-title">Walima</span>
+            <span class="rail-meta">21 January · Multan</span>
+          </button>
+          <button class="rail-print" type="button" id="printBtn">Print</button>
+        </nav>
+
+        <article class="card" id="card-barat" data-event="barat" hidden>
+          <div class="paper-wrap">
+            <span class="paper-back" aria-hidden="true"></span>
+            <div class="paper">
+              <div class="crest" aria-hidden="true"><span>Y</span><i>&amp;</i><span>A</span></div>
+              <p class="bism" lang="ur" dir="rtl">بسم الله الرحمن الرحيم</p>
+              <p class="kicker"><span class="kicker-ur" lang="ur" dir="rtl">بارات</span>The Barat</p>
+              <p class="kicker-sub">Groom’s procession</p>
+              <div class="ornament" aria-hidden="true"><span></span><i></i><span></span></div>
+              <p class="hosts">
+                Professor Malik Iqbal<br>
+                <em>together with</em><br>
+                Dr. Younas Malik<br>
+                Engr. Bilal Malik
+              </p>
+              <p class="request">request the honour of your presence on the occasion of the Barat of</p>
+              <div class="couple">
+                <p class="who"><span class="rank">Engr.</span><span class="who-name">Yousaf Malik</span><span class="kin">son of Professor Malik Iqbal</span></p>
+                <p class="amp"><span class="sr">and</span><span aria-hidden="true">&amp;</span></p>
+                <p class="who"><span class="who-name">Arooj Ramzan</span><span class="kin">daughter of Dr. Ramzan</span></p>
+                <p class="who-ur" lang="ur" dir="rtl">یوسف ملک اور عروج رمضان</p>
+              </div>
+              <div class="ornament" aria-hidden="true"><span></span><i></i><span></span></div>
+              <div class="when">
+                <p class="dow">Sunday</p>
+                <p class="num">17</p>
+                <p class="month">January 2027</p>
+                <p class="time">1:00 in the afternoon</p>
+              </div>
+              <div class="place">
+                <p class="venue-name">Shujabad</p>
+                <p class="venue-address">Hall to be confirmed</p>
+              </div>
+              <p class="verse">Two hearts, one vow,<br>a life begun.<br>Kept in mercy,<br>held as one.</p>
+              <p class="rsvp">RSVP <a href="tel:+923006326697">0300 6326697</a></p>
+            </div>
+          </div>
+          <p class="card-links">
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Shujabad%2C%20Punjab%2C%20Pakistan" target="_blank" rel="noopener noreferrer">Map of Shujabad</a>
+            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Barat%20%E2%80%94%20Yousaf%20%26%20Arooj&amp;dates=20270117T130000/20270117T170000&amp;ctz=Asia%2FKarachi&amp;details=Barat%20of%20Engr.%20Yousaf%20Malik%20and%20Arooj%20Ramzan.%20Sunday%2017%20January%202027%20at%201%3A00%20in%20the%20afternoon.%20Hall%20in%20Shujabad%20to%20be%20confirmed.%20RSVP%200300%206326697&amp;location=Shujabad%2C%20Punjab%2C%20Pakistan" target="_blank" rel="noopener noreferrer">Add to calendar</a>
+          </p>
+        </article>
+
+        <article class="card" id="card-walima" data-event="walima" hidden>
+          <div class="paper-wrap">
+            <span class="paper-back" aria-hidden="true"></span>
+            <div class="paper">
+              <div class="crest" aria-hidden="true"><span>Y</span><i>&amp;</i><span>A</span></div>
+              <p class="bism" lang="ur" dir="rtl">بسم الله الرحمن الرحيم</p>
+              <p class="kicker"><span class="kicker-ur" lang="ur" dir="rtl">ولیمہ</span>The Walima</p>
+              <p class="kicker-sub">Wedding reception</p>
+              <div class="ornament" aria-hidden="true"><span></span><i></i><span></span></div>
+              <p class="hosts">
+                Professor Malik Iqbal<br>
+                <em>together with</em><br>
+                Dr. Younas Malik<br>
+                Engr. Bilal Malik
+              </p>
+              <p class="request">request the honour of your presence on the occasion of the Walima of</p>
+              <div class="couple">
+                <p class="who"><span class="rank">Engr.</span><span class="who-name">Yousaf Malik</span><span class="kin">son of Professor Malik Iqbal</span></p>
+                <p class="amp"><span class="sr">and</span><span aria-hidden="true">&amp;</span></p>
+                <p class="who"><span class="who-name">Arooj Ramzan</span><span class="kin">daughter of Dr. Ramzan</span></p>
+                <p class="who-ur" lang="ur" dir="rtl">یوسف ملک اور عروج رمضان</p>
+              </div>
+              <div class="ornament" aria-hidden="true"><span></span><i></i><span></span></div>
+              <div class="when">
+                <p class="dow">Thursday</p>
+                <p class="num">21</p>
+                <p class="month">January 2027</p>
+                <p class="time">1:00 in the afternoon</p>
+              </div>
+              <div class="place">
+                <p class="venue-name">Shan-e-Multan<br>Event Complex</p>
+                <p class="venue-address">
+                  Nawabpur Road<br>
+                  Near Faiz-e-Aam Nursery<br>
+                  Multan
+                </p>
+              </div>
+              <p class="verse">Two hearts, one vow,<br>a life begun.<br>Kept in mercy,<br>held as one.</p>
+              <p class="rsvp">RSVP <a href="tel:+923006326697">0300 6326697</a></p>
+            </div>
+          </div>
+          <p class="card-links">
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Shan-e-Multan%20Event%20Complex%20Nawabpur%20Road%20Multan" target="_blank" rel="noopener noreferrer">Map of the venue</a>
+            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Walima%20%E2%80%94%20Yousaf%20%26%20Arooj&amp;dates=20270121T130000/20270121T170000&amp;ctz=Asia%2FKarachi&amp;details=Walima%20of%20Engr.%20Yousaf%20Malik%20and%20Arooj%20Ramzan.%20Thursday%2021%20January%202027%20at%201%3A00%20in%20the%20afternoon.%20RSVP%200300%206326697&amp;location=Shan-e-Multan%20Event%20Complex%2C%20Nawabpur%20Road%2C%20near%20Faiz-e-Aam%20Nursery%2C%20Multan" target="_blank" rel="noopener noreferrer">Add to calendar</a>
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+  <script>
+    (function () {
+      var lobby = document.getElementById("lobby");
+      var reading = document.getElementById("reading");
+      var status = document.getElementById("status");
+      var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var busy = false;
+      var active = "barat";
+      var titles = {
+        barat: "The Barat — Yousaf & Arooj",
+        walima: "The Walima — Yousaf & Arooj"
+      };
+
+      function showCard(name) {
+        active = name;
+        document.querySelectorAll(".card").forEach(function (card) {
+          var on = card.dataset.event === name;
+          card.hidden = !on;
+          var wrap = card.querySelector(".paper-wrap");
+          if (on && wrap) {
+            wrap.classList.remove("is-in");
+            void wrap.offsetWidth;
+            wrap.classList.add("is-in");
+          }
+        });
+        document.querySelectorAll(".rail-item").forEach(function (btn) {
+          btn.setAttribute("aria-selected", btn.dataset.event === name ? "true" : "false");
+        });
+        document.title = titles[name];
+        status.textContent = name === "barat" ? "The Barat invitation is open." : "The Walima invitation is open.";
+      }
+
+      function openInvite(name, envelope) {
+        if (busy) return;
+        active = name;
+        if (reduce) {
+          lobby.hidden = true;
+          reading.hidden = false;
+          showCard(name);
+          return;
+        }
+        busy = true;
+        envelope.classList.add("is-open");
+        envelope.setAttribute("aria-expanded", "true");
+        lobby.classList.add("is-opening");
+        window.setTimeout(function () { lobby.classList.add("is-leaving"); }, 900);
+        window.setTimeout(function () {
+          showCard(name);
+          reading.hidden = false;
+          lobby.hidden = true;
+          lobby.classList.remove("is-leaving");
+          busy = false;
+          var heading = document.querySelector(".card:not([hidden]) .who-name");
+          if (heading) {
+            heading.setAttribute("tabindex", "-1");
+            heading.focus({ preventScroll: true });
+          }
+        }, 1320);
+      }
+
+      function closeInvite() {
+        if (busy || reading.hidden) return;
+        if (reduce) {
+          reading.hidden = true;
+          lobby.hidden = false;
+          document.title = "Yousaf & Arooj — Wedding Invitation";
+          return;
+        }
+        busy = true;
+        reading.hidden = true;
+        lobby.hidden = false;
+        lobby.classList.remove("is-leaving");
+        window.setTimeout(function () {
+          document.querySelectorAll(".envelope").forEach(function (el) {
+            el.classList.remove("is-open");
+            el.setAttribute("aria-expanded", "false");
+          });
+        }, 40);
+        window.setTimeout(function () {
+          lobby.classList.remove("is-opening");
+          busy = false;
+          document.title = "Yousaf & Arooj — Wedding Invitation";
+          status.textContent = "Both invitations are closed.";
+          var env = document.querySelector('.envelope[data-event="' + active + '"]');
+          if (env) env.focus();
+        }, 1000);
+      }
+
+      document.querySelectorAll(".envelope").forEach(function (button) {
+        button.addEventListener("click", function () {
+          openInvite(button.dataset.event, button);
+        });
+      });
+
+      document.querySelectorAll(".rail-item").forEach(function (button) {
+        button.addEventListener("click", function () {
+          if (button.dataset.event !== active) showCard(button.dataset.event);
+        });
+      });
+
+      document.getElementById("backBtn").addEventListener("click", closeInvite);
+
+      document.getElementById("printBtn").addEventListener("click", function () {
+        var cards = Array.prototype.slice.call(document.querySelectorAll(".card"));
+        var hidden = cards.map(function (card) { return card.hidden; });
+        cards.forEach(function (card) { card.hidden = false; });
+        window.addEventListener("afterprint", function restore() {
+          cards.forEach(function (card, index) { card.hidden = hidden[index]; });
+          window.removeEventListener("afterprint", restore);
+        });
+        window.print();
+      });
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") closeInvite();
+        if (reading.hidden || busy) return;
+        if (event.key === "ArrowRight" && active === "barat") showCard("walima");
+        if (event.key === "ArrowLeft" && active === "walima") showCard("barat");
+      });
+    })();
+  </script>
+</body>
+</html>
