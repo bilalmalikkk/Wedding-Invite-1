@@ -103,7 +103,7 @@
       align-items: center;
       justify-content: safe center;
       gap: 26px;
-      padding: 56px 18px 32px;
+      padding: 86px 18px 32px;
       transition: opacity 0.45s ease;
     }
 
@@ -393,7 +393,7 @@
       display: grid;
       align-content: safe center;
       justify-items: center;
-      padding: 32px 20px 40px;
+      padding: 78px 20px 40px;
       animation: fade 0.45s ease both;
     }
 
@@ -777,6 +777,170 @@
 
     .card-links a:hover { color: #f6f1e7; }
 
+    .lang {
+      position: fixed;
+      z-index: 6;
+      top: 22px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      direction: ltr;
+      border: 1px solid rgba(215, 192, 154, 0.45);
+      background: rgba(16, 22, 20, 0.88);
+    }
+
+    .lang button {
+      background: transparent;
+      border: 0;
+      color: rgba(244, 239, 230, 0.72);
+      font-family: Outfit, "Avenir Next", sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      padding: 8px 14px;
+      cursor: pointer;
+    }
+
+    .lang button[data-lang="skr"] {
+      font-family: "Noto Nastaliq Urdu", serif;
+      font-size: 16px;
+      letter-spacing: 0;
+      text-transform: none;
+      line-height: 1.4;
+      padding-top: 2px;
+      padding-bottom: 4px;
+    }
+
+    .lang button[aria-pressed="true"] {
+      color: #1c1915;
+      background: var(--gold-soft);
+    }
+
+    .lang button:focus-visible {
+      outline: 1px solid rgba(217, 196, 154, 0.95);
+      outline-offset: 3px;
+    }
+
+    html.is-skr h1,
+    html.is-skr .eyebrow,
+    html.is-skr .hint,
+    html.is-skr .cover-when,
+    html.is-skr .cap-en,
+    html.is-skr .cap-meta,
+    html.is-skr .env-letter-kicker,
+    html.is-skr .env-letter-names,
+    html.is-skr .rail-title,
+    html.is-skr .rail-meta,
+    html.is-skr .rail-close,
+    html.is-skr .rail-print,
+    html.is-skr .card-links a,
+    html.is-skr .paper,
+    html.is-skr .kicker,
+    html.is-skr .kicker-sub,
+    html.is-skr .hosts,
+    html.is-skr .request,
+    html.is-skr .rank,
+    html.is-skr .who-name,
+    html.is-skr .kin,
+    html.is-skr .verse,
+    html.is-skr .dow,
+    html.is-skr .month,
+    html.is-skr .time,
+    html.is-skr .venue-name,
+    html.is-skr .venue-address,
+    html.is-skr .rsvp {
+      font-family: "Noto Nastaliq Urdu", serif;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    html.is-skr h1 {
+      font-size: clamp(40px, 8vw, 64px);
+      line-height: 1.45;
+      font-weight: 500;
+    }
+
+    html.is-skr .lobby { gap: 10px; padding-top: 74px; }
+
+    html.is-skr .eyebrow,
+    html.is-skr .hint,
+    html.is-skr .cover-when {
+      font-size: 18px;
+      line-height: 1.55;
+    }
+
+    html.is-skr .cap-en,
+    html.is-skr .cap-meta {
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    html.is-skr .who-name {
+      font-size: clamp(28px, 4.4vw, 36px);
+      line-height: 1.85;
+    }
+
+    html.is-skr .kin,
+    html.is-skr .kicker-sub,
+    html.is-skr .request,
+    html.is-skr .venue-address,
+    html.is-skr .hosts {
+      font-size: 17px;
+      line-height: 1.9;
+    }
+
+    html.is-skr .request { max-width: none; }
+
+    html.is-skr .venue-name,
+    html.is-skr .verse {
+      font-size: 22px;
+      line-height: 2;
+    }
+
+    html.is-skr .verse { max-width: 16em; }
+
+    html.is-skr .kicker,
+    html.is-skr .time,
+    html.is-skr .dow,
+    html.is-skr .rsvp,
+    html.is-skr .month,
+    html.is-skr .rank {
+      font-size: 16px;
+      line-height: 1.9;
+    }
+
+    html.is-skr .kicker [data-i18n]:empty { display: none; }
+
+    html.is-skr .crest,
+    html.is-skr .seal,
+    html.is-skr .num { direction: ltr; }
+
+    html.is-skr .rail { gap: 6px 14px; }
+    html.is-skr .rail-kicker { display: none; }
+    html.is-skr .rail-item { padding: 2px 8px; }
+
+    html.is-skr .rail-title {
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    html.is-skr .rail-close,
+    html.is-skr .rail-print,
+    html.is-skr .card-links a,
+    html.is-skr .rail-meta {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    html.is-skr .reading { padding-top: 92px; }
+
+    html.is-skr .num {
+      font-family: "Cormorant Garamond", Palatino, Georgia, serif;
+      letter-spacing: 0;
+      line-height: 0.8;
+    }
+
     @media (max-width: 800px) {
       .frame { inset: 8px; }
       .reading-layout { grid-template-columns: 1fr; gap: 12px; }
@@ -802,6 +966,8 @@
       .rail-title { font-size: 22px; }
       .paper { padding: 26px 18px 22px; }
       h1 { letter-spacing: -0.02em; }
+      .lang { top: 14px; }
+      .lang button { padding: 7px 10px; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -814,7 +980,7 @@
     @media print {
       @page { margin: 14mm; }
       html, body { background: #fff !important; }
-      body::before, body::after, .frame, .lobby, .rail, .card-links, .paper-back { display: none !important; }
+      body::before, body::after, .frame, .lobby, .rail, .card-links, .paper-back, .lang { display: none !important; }
       .reading {
         display: block !important;
         min-height: 0 !important;
@@ -851,23 +1017,27 @@
 </head>
 <body>
   <div class="frame" aria-hidden="true"></div>
+  <div class="lang" role="group" aria-label="Language">
+    <button type="button" data-lang="en" aria-pressed="true">English</button>
+    <button type="button" data-lang="skr" aria-pressed="false">سرائیکی</button>
+  </div>
   <p class="sr" id="status" aria-live="polite"></p>
   <main>
     <section class="lobby" id="lobby">
       <header class="intro">
-        <p class="eyebrow">You are invited</p>
-        <h1>Yousaf <em>&amp;</em> Arooj</h1>
-        <p class="cover-ur" lang="ur" dir="rtl">یوسف ملک اور عروج رمضان</p>
-        <p class="cover-when">January 2027</p>
-        <p class="hint">Open a seal</p>
+        <p class="eyebrow" data-i18n="eyebrow">You are invited</p>
+        <h1 data-i18n-html="hero">Yousaf <em>&amp;</em> Arooj</h1>
+        <p class="cover-ur" lang="ur" dir="rtl" data-i18n="coverUr">یوسف ملک اور عروج رمضان</p>
+        <p class="cover-when" data-i18n="coverWhen">January 2027</p>
+        <p class="hint" data-i18n="hint">Open a seal</p>
       </header>
       <div class="pair">
-        <button class="envelope" type="button" data-event="barat" aria-expanded="false" aria-label="Open the Barat invitation, Sunday 17 January, Shujabad">
+        <button class="envelope" type="button" data-event="barat" aria-expanded="false" data-i18n-aria="ariaBarat" aria-label="Open the Barat invitation, Sunday 17 January, Shujabad">
           <span class="env" aria-hidden="true">
             <span class="env-back"></span>
             <span class="env-letter">
-              <span class="env-letter-kicker">The Barat</span>
-              <span class="env-letter-names">Yousaf <i>&amp;</i> Arooj</span>
+              <span class="env-letter-kicker" data-i18n="letterBarat">The Barat</span>
+              <span class="env-letter-names" data-i18n-html="letterNames">Yousaf <i>&amp;</i> Arooj</span>
             </span>
             <span class="fold fold-left"></span>
             <span class="fold fold-right"></span>
@@ -882,16 +1052,16 @@
           </span>
           <span class="env-caption">
             <span class="cap-ur" lang="ur" dir="rtl">بارات</span>
-            <span class="cap-en">The Barat</span>
-            <span class="cap-meta">Sunday · 17 January · Shujabad</span>
+            <span class="cap-en" data-i18n="capBarat">The Barat</span>
+            <span class="cap-meta" data-i18n="metaBarat">Sunday · 17 January · Shujabad</span>
           </span>
         </button>
-        <button class="envelope" type="button" data-event="walima" aria-expanded="false" aria-label="Open the Walima invitation, Thursday 21 January, Shan-e-Multan Event Complex">
+        <button class="envelope" type="button" data-event="walima" aria-expanded="false" data-i18n-aria="ariaWalima" aria-label="Open the Walima invitation, Thursday 21 January, Shan-e-Multan Event Complex">
           <span class="env" aria-hidden="true">
             <span class="env-back"></span>
             <span class="env-letter">
-              <span class="env-letter-kicker">The Walima</span>
-              <span class="env-letter-names">Yousaf <i>&amp;</i> Arooj</span>
+              <span class="env-letter-kicker" data-i18n="letterWalima">The Walima</span>
+              <span class="env-letter-names" data-i18n-html="letterNames">Yousaf <i>&amp;</i> Arooj</span>
             </span>
             <span class="fold fold-left"></span>
             <span class="fold fold-right"></span>
@@ -906,8 +1076,8 @@
           </span>
           <span class="env-caption">
             <span class="cap-ur" lang="ur" dir="rtl">ولیمہ</span>
-            <span class="cap-en">The Walima</span>
-            <span class="cap-meta">Thursday · 21 January · Multan</span>
+            <span class="cap-en" data-i18n="capWalima">The Walima</span>
+            <span class="cap-meta" data-i18n="metaWalima">Thursday · 21 January · Multan</span>
           </span>
         </button>
       </div>
@@ -916,18 +1086,18 @@
     <section class="reading" id="reading" hidden>
       <div class="reading-layout">
         <nav class="rail" aria-label="Celebrations">
-          <button class="rail-close" type="button" id="backBtn">Close</button>
+          <button class="rail-close" type="button" id="backBtn" data-i18n="close">Close</button>
           <button class="rail-item" type="button" data-event="barat" aria-selected="false">
             <span class="rail-kicker">01</span>
-            <span class="rail-title">Barat</span>
-            <span class="rail-meta">17 January · Shujabad</span>
+            <span class="rail-title" data-i18n="railBarat">Barat</span>
+            <span class="rail-meta" data-i18n="railBaratMeta">17 January · Shujabad</span>
           </button>
           <button class="rail-item" type="button" data-event="walima" aria-selected="false">
             <span class="rail-kicker">02</span>
-            <span class="rail-title">Walima</span>
-            <span class="rail-meta">21 January · Multan</span>
+            <span class="rail-title" data-i18n="railWalima">Walima</span>
+            <span class="rail-meta" data-i18n="railWalimaMeta">21 January · Multan</span>
           </button>
-          <button class="rail-print" type="button" id="printBtn">Print</button>
+          <button class="rail-print" type="button" id="printBtn" data-i18n="print">Print</button>
         </nav>
 
         <article class="card" id="card-barat" data-event="barat" hidden>
@@ -936,40 +1106,40 @@
             <div class="paper">
               <div class="crest" aria-hidden="true"><span>Y</span><i>&amp;</i><span>A</span></div>
               <p class="bism" lang="ur" dir="rtl">بسم الله الرحمن الرحيم</p>
-              <p class="kicker"><span class="kicker-ur" lang="ur" dir="rtl">بارات</span>The Barat</p>
-              <p class="kicker-sub">Groom’s procession</p>
+              <p class="kicker"><span class="kicker-ur" lang="ur" dir="rtl">بارات</span><span data-i18n="kickerBarat">The Barat</span></p>
+              <p class="kicker-sub" data-i18n="subBarat">Groom’s procession</p>
               <div class="ornament" aria-hidden="true"><span></span><i></i><span></span></div>
-              <p class="hosts">
+              <p class="hosts" data-i18n-html="hosts">
                 Professor Malik Iqbal<br>
                 <em>together with</em><br>
                 Dr. Younas Malik<br>
                 Engr. Bilal Malik
               </p>
-              <p class="request">request the honour of your presence on the occasion of the Barat of</p>
+              <p class="request" data-i18n="requestBarat">request the honour of your presence on the occasion of the Barat of</p>
               <div class="couple">
-                <p class="who"><span class="rank">Engr.</span><span class="who-name">Yousaf Malik</span><span class="kin">son of Professor Malik Iqbal</span></p>
-                <p class="amp"><span class="sr">and</span><span aria-hidden="true">&amp;</span></p>
-                <p class="who"><span class="who-name">Arooj Ramzan</span><span class="kin">daughter of Dr. Ramzan</span></p>
-                <p class="who-ur" lang="ur" dir="rtl">یوسف ملک اور عروج رمضان</p>
+                <p class="who"><span class="rank" data-i18n="rank">Engr.</span><span class="who-name" data-i18n="nameYousaf">Yousaf Malik</span><span class="kin" data-i18n="kinYousaf">son of Professor Malik Iqbal</span></p>
+                <p class="amp"><span class="sr" data-i18n="andWord">and</span><span aria-hidden="true">&amp;</span></p>
+                <p class="who"><span class="who-name" data-i18n="nameArooj">Arooj Ramzan</span><span class="kin" data-i18n="kinArooj">daughter of Dr. Ramzan</span></p>
+                <p class="who-ur" lang="ur" dir="rtl" data-i18n="coupleUr">یوسف ملک اور عروج رمضان</p>
               </div>
               <div class="ornament" aria-hidden="true"><span></span><i></i><span></span></div>
               <div class="when">
-                <p class="dow">Sunday</p>
+                <p class="dow" data-i18n="dowSun">Sunday</p>
                 <p class="num">17</p>
-                <p class="month">January 2027</p>
-                <p class="time">1:00 in the afternoon</p>
+                <p class="month" data-i18n="monthJan">January 2027</p>
+                <p class="time" data-i18n="time">1:00 in the afternoon</p>
               </div>
               <div class="place">
-                <p class="venue-name">Shujabad</p>
-                <p class="venue-address">Hall to be confirmed</p>
+                <p class="venue-name" data-i18n="venueShujabad">Shujabad</p>
+                <p class="venue-address" data-i18n="hall">Hall to be confirmed</p>
               </div>
-              <p class="verse">Two hearts, one vow,<br>a life begun.<br>Kept in mercy,<br>held as one.</p>
-              <p class="rsvp">RSVP <a href="tel:+923006326697">0300 6326697</a></p>
+              <p class="verse" data-i18n-html="verse">Two hearts, one vow,<br>a life begun.<br>Kept in mercy,<br>held as one.</p>
+              <p class="rsvp" data-i18n-html="rsvp">RSVP <a href="tel:+923006326697">0300 6326697</a></p>
             </div>
           </div>
           <p class="card-links">
-            <a href="https://www.google.com/maps/search/?api=1&amp;query=Shujabad%2C%20Punjab%2C%20Pakistan" target="_blank" rel="noopener noreferrer">Map of Shujabad</a>
-            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Barat%20%E2%80%94%20Yousaf%20%26%20Arooj&amp;dates=20270117T130000/20270117T170000&amp;ctz=Asia%2FKarachi&amp;details=Barat%20of%20Engr.%20Yousaf%20Malik%20and%20Arooj%20Ramzan.%20Sunday%2017%20January%202027%20at%201%3A00%20in%20the%20afternoon.%20Hall%20in%20Shujabad%20to%20be%20confirmed.%20RSVP%200300%206326697&amp;location=Shujabad%2C%20Punjab%2C%20Pakistan" target="_blank" rel="noopener noreferrer">Add to calendar</a>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Shujabad%2C%20Punjab%2C%20Pakistan" target="_blank" rel="noopener noreferrer" data-i18n="mapShujabad">Map of Shujabad</a>
+            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Barat%20%E2%80%94%20Yousaf%20%26%20Arooj&amp;dates=20270117T130000/20270117T170000&amp;ctz=Asia%2FKarachi&amp;details=Barat%20of%20Engr.%20Yousaf%20Malik%20and%20Arooj%20Ramzan.%20Sunday%2017%20January%202027%20at%201%3A00%20in%20the%20afternoon.%20Hall%20in%20Shujabad%20to%20be%20confirmed.%20RSVP%200300%206326697&amp;location=Shujabad%2C%20Punjab%2C%20Pakistan" target="_blank" rel="noopener noreferrer" data-i18n="calendar">Add to calendar</a>
           </p>
         </article>
 
@@ -979,44 +1149,44 @@
             <div class="paper">
               <div class="crest" aria-hidden="true"><span>Y</span><i>&amp;</i><span>A</span></div>
               <p class="bism" lang="ur" dir="rtl">بسم الله الرحمن الرحيم</p>
-              <p class="kicker"><span class="kicker-ur" lang="ur" dir="rtl">ولیمہ</span>The Walima</p>
-              <p class="kicker-sub">Wedding reception</p>
+              <p class="kicker"><span class="kicker-ur" lang="ur" dir="rtl">ولیمہ</span><span data-i18n="kickerWalima">The Walima</span></p>
+              <p class="kicker-sub" data-i18n="subWalima">Wedding reception</p>
               <div class="ornament" aria-hidden="true"><span></span><i></i><span></span></div>
-              <p class="hosts">
+              <p class="hosts" data-i18n-html="hosts">
                 Professor Malik Iqbal<br>
                 <em>together with</em><br>
                 Dr. Younas Malik<br>
                 Engr. Bilal Malik
               </p>
-              <p class="request">request the honour of your presence on the occasion of the Walima of</p>
+              <p class="request" data-i18n="requestWalima">request the honour of your presence on the occasion of the Walima of</p>
               <div class="couple">
-                <p class="who"><span class="rank">Engr.</span><span class="who-name">Yousaf Malik</span><span class="kin">son of Professor Malik Iqbal</span></p>
-                <p class="amp"><span class="sr">and</span><span aria-hidden="true">&amp;</span></p>
-                <p class="who"><span class="who-name">Arooj Ramzan</span><span class="kin">daughter of Dr. Ramzan</span></p>
-                <p class="who-ur" lang="ur" dir="rtl">یوسف ملک اور عروج رمضان</p>
+                <p class="who"><span class="rank" data-i18n="rank">Engr.</span><span class="who-name" data-i18n="nameYousaf">Yousaf Malik</span><span class="kin" data-i18n="kinYousaf">son of Professor Malik Iqbal</span></p>
+                <p class="amp"><span class="sr" data-i18n="andWord">and</span><span aria-hidden="true">&amp;</span></p>
+                <p class="who"><span class="who-name" data-i18n="nameArooj">Arooj Ramzan</span><span class="kin" data-i18n="kinArooj">daughter of Dr. Ramzan</span></p>
+                <p class="who-ur" lang="ur" dir="rtl" data-i18n="coupleUr">یوسف ملک اور عروج رمضان</p>
               </div>
               <div class="ornament" aria-hidden="true"><span></span><i></i><span></span></div>
               <div class="when">
-                <p class="dow">Thursday</p>
+                <p class="dow" data-i18n="dowThu">Thursday</p>
                 <p class="num">21</p>
-                <p class="month">January 2027</p>
-                <p class="time">1:00 in the afternoon</p>
+                <p class="month" data-i18n="monthJan">January 2027</p>
+                <p class="time" data-i18n="time">1:00 in the afternoon</p>
               </div>
               <div class="place">
-                <p class="venue-name">Shan-e-Multan<br>Event Complex</p>
-                <p class="venue-address">
+                <p class="venue-name" data-i18n-html="venueWalima">Shan-e-Multan<br>Event Complex</p>
+                <p class="venue-address" data-i18n-html="addressWalima">
                   Nawabpur Road<br>
                   Near Faiz-e-Aam Nursery<br>
                   Multan
                 </p>
               </div>
-              <p class="verse">Two hearts, one vow,<br>a life begun.<br>Kept in mercy,<br>held as one.</p>
-              <p class="rsvp">RSVP <a href="tel:+923006326697">0300 6326697</a></p>
+              <p class="verse" data-i18n-html="verse">Two hearts, one vow,<br>a life begun.<br>Kept in mercy,<br>held as one.</p>
+              <p class="rsvp" data-i18n-html="rsvp">RSVP <a href="tel:+923006326697">0300 6326697</a></p>
             </div>
           </div>
           <p class="card-links">
-            <a href="https://www.google.com/maps/search/?api=1&amp;query=Shan-e-Multan%20Event%20Complex%20Nawabpur%20Road%20Multan" target="_blank" rel="noopener noreferrer">Map of the venue</a>
-            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Walima%20%E2%80%94%20Yousaf%20%26%20Arooj&amp;dates=20270121T130000/20270121T170000&amp;ctz=Asia%2FKarachi&amp;details=Walima%20of%20Engr.%20Yousaf%20Malik%20and%20Arooj%20Ramzan.%20Thursday%2021%20January%202027%20at%201%3A00%20in%20the%20afternoon.%20RSVP%200300%206326697&amp;location=Shan-e-Multan%20Event%20Complex%2C%20Nawabpur%20Road%2C%20near%20Faiz-e-Aam%20Nursery%2C%20Multan" target="_blank" rel="noopener noreferrer">Add to calendar</a>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Shan-e-Multan%20Event%20Complex%20Nawabpur%20Road%20Multan" target="_blank" rel="noopener noreferrer" data-i18n="mapVenue">Map of the venue</a>
+            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Walima%20%E2%80%94%20Yousaf%20%26%20Arooj&amp;dates=20270121T130000/20270121T170000&amp;ctz=Asia%2FKarachi&amp;details=Walima%20of%20Engr.%20Yousaf%20Malik%20and%20Arooj%20Ramzan.%20Thursday%2021%20January%202027%20at%201%3A00%20in%20the%20afternoon.%20RSVP%200300%206326697&amp;location=Shan-e-Multan%20Event%20Complex%2C%20Nawabpur%20Road%2C%20near%20Faiz-e-Aam%20Nursery%2C%20Multan" target="_blank" rel="noopener noreferrer" data-i18n="calendar">Add to calendar</a>
           </p>
         </article>
       </div>
@@ -1030,10 +1200,149 @@
       var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
       var busy = false;
       var active = "barat";
-      var titles = {
-        barat: "The Barat — Yousaf & Arooj",
-        walima: "The Walima — Yousaf & Arooj"
+      var currentLang = "en";
+      var copy = {
+        en: {
+          eyebrow: "You are invited",
+          hero: "Yousaf <em>&amp;</em> Arooj",
+          coverUr: "یوسف ملک اور عروج رمضان",
+          coverWhen: "January 2027",
+          hint: "Open a seal",
+          letterBarat: "The Barat",
+          letterWalima: "The Walima",
+          letterNames: "Yousaf <i>&amp;</i> Arooj",
+          capBarat: "The Barat",
+          capWalima: "The Walima",
+          metaBarat: "Sunday · 17 January · Shujabad",
+          metaWalima: "Thursday · 21 January · Multan",
+          ariaBarat: "Open the Barat invitation, Sunday 17 January, Shujabad",
+          ariaWalima: "Open the Walima invitation, Thursday 21 January, Shan-e-Multan Event Complex",
+          close: "Close",
+          railBarat: "Barat",
+          railWalima: "Walima",
+          railBaratMeta: "17 January · Shujabad",
+          railWalimaMeta: "21 January · Multan",
+          print: "Print",
+          kickerBarat: "The Barat",
+          kickerWalima: "The Walima",
+          subBarat: "Groom’s procession",
+          subWalima: "Wedding reception",
+          hosts: "Professor Malik Iqbal<br><em>together with</em><br>Dr. Younas Malik<br>Engr. Bilal Malik",
+          requestBarat: "request the honour of your presence on the occasion of the Barat of",
+          requestWalima: "request the honour of your presence on the occasion of the Walima of",
+          rank: "Engr.",
+          nameYousaf: "Yousaf Malik",
+          kinYousaf: "son of Professor Malik Iqbal",
+          andWord: "and",
+          nameArooj: "Arooj Ramzan",
+          kinArooj: "daughter of Dr. Ramzan",
+          coupleUr: "یوسف ملک اور عروج رمضان",
+          dowSun: "Sunday",
+          dowThu: "Thursday",
+          monthJan: "January 2027",
+          time: "1:00 in the afternoon",
+          venueShujabad: "Shujabad",
+          hall: "Hall to be confirmed",
+          venueWalima: "Shan-e-Multan<br>Event Complex",
+          addressWalima: "Nawabpur Road<br>Near Faiz-e-Aam Nursery<br>Multan",
+          verse: "Two hearts, one vow,<br>a life begun.<br>Kept in mercy,<br>held as one.",
+          rsvp: "RSVP <a dir=\"ltr\" href=\"tel:+923006326697\">0300 6326697</a>",
+          mapShujabad: "Map of Shujabad",
+          mapVenue: "Map of the venue",
+          calendar: "Add to calendar",
+          titleHome: "Yousaf & Arooj — Wedding Invitation",
+          titleBarat: "The Barat — Yousaf & Arooj",
+          titleWalima: "The Walima — Yousaf & Arooj",
+          openBarat: "The Barat invitation is open.",
+          openWalima: "The Walima invitation is open.",
+          closed: "Both invitations are closed."
+        },
+        skr: {
+          eyebrow: "تُہاکوں سَݙا ہے",
+          hero: "یوسف <em>تے</em> عروج",
+          coverUr: "یوسف ملک تے عروج رمضان",
+          coverWhen: "جنوری ٢٠٢٧",
+          hint: "مُہر کھولو",
+          letterBarat: "بارات",
+          letterWalima: "ولیمہ",
+          letterNames: "یوسف <i>تے</i> عروج",
+          capBarat: "گھوٹ دی بارات",
+          capWalima: "شادی دا ولیمہ",
+          metaBarat: "اتوار · ١٧ جنوری · شجاع آباد",
+          metaWalima: "جمعرات · ٢١ جنوری · ملتان",
+          ariaBarat: "بارات دا سَݙا کھولو، اتوار ١٧ جنوری، شجاع آباد",
+          ariaWalima: "ولیمے دا سَݙا کھولو، جمعرات ٢١ جنوری، شانِ ملتان",
+          close: "واپس",
+          railBarat: "بارات",
+          railWalima: "ولیمہ",
+          railBaratMeta: "١٧ جنوری · شجاع آباد",
+          railWalimaMeta: "٢١ جنوری · ملتان",
+          print: "چھاپو",
+          kickerBarat: "",
+          kickerWalima: "",
+          subBarat: "گھوٹ دی بارات",
+          subWalima: "شادی دا ولیمہ",
+          hosts: "پروفیسر ملک اقبال<br><em>دے نال</em><br>ڈاکٹر یونس ملک<br>انجینئر بلال ملک",
+          requestBarat: "ایں بارات تے تُہاݙے آوݨ دی درخواست ہے",
+          requestWalima: "ایں ولیمے تے تُہاݙے آوݨ دی درخواست ہے",
+          rank: "انجینئر",
+          nameYousaf: "یوسف ملک",
+          kinYousaf: "پروفیسر ملک اقبال دے پُتر",
+          andWord: "تے",
+          nameArooj: "عروج رمضان",
+          kinArooj: "ڈاکٹر رمضان دی دھی",
+          coupleUr: "یوسف ملک تے عروج رمضان",
+          dowSun: "اتوار",
+          dowThu: "جمعرات",
+          monthJan: "جنوری ٢٠٢٧",
+          time: "١ وَڄے ݙوپہر",
+          venueShujabad: "شجاع آباد",
+          hall: "ہال اَڄے طے کائنی",
+          venueWalima: "شانِ ملتان<br>ایونٹ کمپلیکس",
+          addressWalima: "نواب پور روڈ<br>فیضِ عام نرسری دے نیڑے<br>ملتان",
+          verse: "ݙو دِلاں دا ہِک وَعدہ<br>جیوݨ دا مُنڈھ ٻدھیا<br>رحمت دے سائے وچ<br>ݙوہیں ہِک تھی ڳئے",
+          rsvp: "جواب ݙیوو <a dir=\"ltr\" href=\"tel:+923006326697\">0300 6326697</a>",
+          mapShujabad: "شجاع آباد دا نقشہ",
+          mapVenue: "جاء دا نقشہ",
+          calendar: "کیلنڈر وچ پاؤ",
+          titleHome: "یوسف تے عروج — شادی دا سَݙا",
+          titleBarat: "بارات — یوسف تے عروج",
+          titleWalima: "ولیمہ — یوسف تے عروج",
+          openBarat: "بارات دا سَݙا کھُل ڳیا۔",
+          openWalima: "ولیمے دا سَݙا کھُل ڳیا۔",
+          closed: "ݙونہیں سَݙے بند تھی ڳئے۔"
+        }
       };
+
+      function phrase(key) {
+        return (copy[currentLang] || copy.en)[key];
+      }
+
+      function applyLang(lang) {
+        currentLang = copy[lang] ? lang : "en";
+        var pack = copy[currentLang];
+        document.documentElement.lang = currentLang === "skr" ? "skr" : "en";
+        document.documentElement.dir = currentLang === "skr" ? "rtl" : "ltr";
+        document.documentElement.classList.toggle("is-skr", currentLang === "skr");
+        document.querySelectorAll("[data-i18n]").forEach(function (el) {
+          var key = el.getAttribute("data-i18n");
+          if (pack[key] != null) el.textContent = pack[key];
+        });
+        document.querySelectorAll("[data-i18n-html]").forEach(function (el) {
+          var key = el.getAttribute("data-i18n-html");
+          if (pack[key] != null) el.innerHTML = pack[key];
+        });
+        document.querySelectorAll("[data-i18n-aria]").forEach(function (el) {
+          var key = el.getAttribute("data-i18n-aria");
+          if (pack[key] != null) el.setAttribute("aria-label", pack[key]);
+        });
+        document.querySelectorAll(".lang button").forEach(function (btn) {
+          btn.setAttribute("aria-pressed", btn.dataset.lang === currentLang ? "true" : "false");
+        });
+        try { localStorage.setItem("invite-lang", currentLang); } catch (err) {}
+        if (reading.hidden) document.title = pack.titleHome;
+        else document.title = active === "barat" ? pack.titleBarat : pack.titleWalima;
+      }
 
       function showCard(name) {
         active = name;
@@ -1050,8 +1359,8 @@
         document.querySelectorAll(".rail-item").forEach(function (btn) {
           btn.setAttribute("aria-selected", btn.dataset.event === name ? "true" : "false");
         });
-        document.title = titles[name];
-        status.textContent = name === "barat" ? "The Barat invitation is open." : "The Walima invitation is open.";
+        document.title = name === "barat" ? phrase("titleBarat") : phrase("titleWalima");
+        status.textContent = name === "barat" ? phrase("openBarat") : phrase("openWalima");
       }
 
       function openInvite(name, envelope) {
@@ -1087,7 +1396,7 @@
         if (reduce) {
           reading.hidden = true;
           lobby.hidden = false;
-          document.title = "Yousaf & Arooj — Wedding Invitation";
+          document.title = phrase("titleHome");
           return;
         }
         busy = true;
@@ -1103,8 +1412,8 @@
         window.setTimeout(function () {
           lobby.classList.remove("is-opening");
           busy = false;
-          document.title = "Yousaf & Arooj — Wedding Invitation";
-          status.textContent = "Both invitations are closed.";
+          document.title = phrase("titleHome");
+          status.textContent = phrase("closed");
           var env = document.querySelector('.envelope[data-event="' + active + '"]');
           if (env) env.focus();
         }, 1000);
@@ -1134,6 +1443,16 @@
         });
         window.print();
       });
+
+      document.querySelectorAll(".lang button").forEach(function (button) {
+        button.addEventListener("click", function () {
+          applyLang(button.dataset.lang);
+        });
+      });
+
+      var savedLang = "en";
+      try { savedLang = localStorage.getItem("invite-lang") || "en"; } catch (err) {}
+      applyLang(savedLang);
 
       document.addEventListener("keydown", function (event) {
         if (event.key === "Escape") closeInvite();
